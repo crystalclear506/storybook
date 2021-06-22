@@ -1,0 +1,12 @@
+@import '../../shared-stylings/base.scss';
+
+.dashboard-container {
+    min: {
+        width: 400px;
+        height: 200px;
+    };
+    border: 1px solid lightgrey;
+    display: inline-block;
+    padding: 20px;
+    font-family: $primary-font;
+}

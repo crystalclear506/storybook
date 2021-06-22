@@ -1,0 +1,28 @@
+@import '../../shared-stylings/base.scss';
+
+.tree-container {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.list-container {
+
+}
+
+.item {
+    font-family: $primary-font;
+    padding: 15px;
+    padding-right: 0px;
+    cursor: pointer;
+    margin: {
+        left: 3px;
+        right: 3px;
+        top: 3px;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color: white;
+        border-radius: 3px;
+    }
+}

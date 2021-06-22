@@ -1,0 +1,51 @@
+@import './shared-stylings/base.scss';
+
+.app-container {
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    
+    .column {
+        width: 100%;
+    }
+
+    .left-column {
+        max-width: 297px;
+
+        margin: {
+            left: 15px;
+            right: 15px;
+            top: 15px;
+            bottom: 15px;
+        }
+    }
+
+    .right-column {
+        width: 100%;
+        overflow-y: scroll;
+
+        margin: {
+            left: 0px;
+            right: 15px;
+            top: 15px;
+            bottom: 15px;
+        }
+    }
+    height: calc(100% - 70px);
+}
+
+.column {
+    background-color: $card-background;
+    box-shadow: $card-backdrop;
+}
+
+.app-container {
+    height: 100%;
+}
+
+body {
+    background-color: $primary-background;
+    height: 100%;
+}
