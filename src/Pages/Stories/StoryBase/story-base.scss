@@ -1,6 +1,7 @@
-@import '../shared-stylings/base.scss';
+@import '../../shared-stylings/base.scss';
 
 .preview {
+    padding: 10px;
     min: {
         width: 100px;
         height: 500px;

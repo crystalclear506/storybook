@@ -4,10 +4,15 @@ import './dashboard-item.scss';
 
 const DashboardItem = (props) => {
     const dashboardContainerClass = classNames('dashboard-container');
+    const titleContainerClass = classNames('title-container');
+    const bodyContainerClass = classNames('body-container')
+
     return (
         <div className={ dashboardContainerClass }>
-            <p> { props.title }</p>
-            <div> { props.children }</div>
+            <div className={ titleContainerClass }> { props.title }</div>
+            <div className={ bodyContainerClass }>
+                { props.children }
+            </div>
         </div>
     )
 }

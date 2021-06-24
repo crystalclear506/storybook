@@ -2,8 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import Tree from './Components/Tree/Tree';
 import Header from './Components/Header/Header';
-import CountdownClock from '@crystalclear506/countdown-clock';
-import Story from './Stories/StoryBase.story';
+
+import CountdownClockStory from './Stories/CountdownClock/CountdownClockStory';
 
 import './app.scss';
 
@@ -24,9 +24,7 @@ const elem = () => {
                     <Tree/>
                 </div>
                 <div className={ rightColumnClass }>
-                  {
-                      <Story />
-                  }
+                    <CountdownClockStory/>
                 </div>
             </div>
             <div className={ footerClass }></div>
