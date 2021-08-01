@@ -1,14 +1,12 @@
 @import '../../shared-stylings/base.scss';
 
-.dashboard-container {
-    min: {
-        width: 300px;
-    };
+.dashboard-item-container {
     border: 1px solid lightgrey;
-    display: inline-block;
+    border-radius: 3px;
     padding: 20px;
     font-family: $primary-font;
     vertical-align: middle;
+    margin-top: 10px;
 
     .title-container {
         font-size: 1.25rem;
