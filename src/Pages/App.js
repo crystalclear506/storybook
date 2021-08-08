@@ -13,6 +13,7 @@ const elem = () => {
     const footerClass = classNames('footer');
     const leftColumnClass = classNames('left-column', 'column');
     const rightColumnClass = classNames('right-column', 'column');
+    const contentClass = classNames('content');
 
     let arr = [...Array(100).keys()];
 
@@ -20,11 +21,13 @@ const elem = () => {
         <div className={ appContainerClass }>
             <Header/>
             <div className={ rowClass }>
-                <div className={ leftColumnClass }>
-                    <Tree/>
-                </div>
-                <div className={ rightColumnClass }>
-                    <CountdownClockStory/>
+                <div className={ contentClass }>
+                    <div className={ leftColumnClass }>
+                        <Tree/>
+                    </div>
+                    <div className={ rightColumnClass }>
+                        <CountdownClockStory/>
+                    </div>
                 </div>
             </div>
             <div className={ footerClass }></div>

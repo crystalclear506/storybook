@@ -1,7 +1,5 @@
 import React from 'react';
-import Story from '../StoryBase/StoryBase';
-import DashboardItem from '../../Components/DashboardItem/DashboardItem';
-
+import Story, { DashboardItem } from '../StoryBase/StoryBase';
 import CountdownClock from '@crystalclear506/countdown-clock';
 
 const CountdownClockStory = (props) => {

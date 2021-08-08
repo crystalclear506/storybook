@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './story-base.scss';
+import DashboardItem from '../../Components/DashboardItem/DashboardItem';
+export { DashboardItem };
 
 const Story = ({ title, dashboardItems, children }) => {
     const previewClass = classNames('preview');

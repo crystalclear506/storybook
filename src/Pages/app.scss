@@ -6,7 +6,28 @@
 
 .row {
     display: flex;
-    
+    height: calc(100% - 70px);
+    justify-content: center;
+}
+
+.column {
+    background-color: $card-background;
+    box-shadow: $card-backdrop;
+}
+
+.app-container {
+    height: 100%;
+}
+
+body {
+    background-color: $primary-background;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    width: 1500px;
+
     .column {
         width: 100%;
     }
@@ -23,9 +44,7 @@
     }
 
     .right-column {
-        width: 100%;
         overflow-y: scroll;
-
         margin: {
             left: 0px;
             right: 15px;
@@ -33,19 +52,4 @@
             bottom: 15px;
         }
     }
-    height: calc(100% - 70px);
-}
-
-.column {
-    background-color: $card-background;
-    box-shadow: $card-backdrop;
-}
-
-.app-container {
-    height: 100%;
-}
-
-body {
-    background-color: $primary-background;
-    height: 100%;
 }
