@@ -2,7 +2,12 @@ import React from 'react';
 import Story, { DashboardItem } from '../StoryBase/StoryBase';
 import CountdownClock from '@crystalclear506/countdown-clock';
 
-const CountdownClockStory = (props) => {
+const ComponentInfo = {
+    name: 'Countdown Clock',
+    path: 'countdown-clock'
+};
+
+const CountdownClockPage = (props) => {
     const ref = React.createRef();
     const refInput = React.createRef();
 
@@ -37,17 +42,20 @@ const CountdownClockStory = (props) => {
             <button onClick={ setOneMinute }> Set 1 minute </button>
         </DashboardItem>,
         <DashboardItem title={ 'Set 1 hour' }>
-          <button onClick={ setOneHour }> Set 1 hour </button>
+            <button onClick={ setOneHour }> Set 1 hour </button>
         </DashboardItem>
     ];
 
     return (
         <Story 
-            title={ 'Countdown Clock' }
+            title={ ComponentInfo.name }
             dashboardItems={ dashboardItems }>
             <CountdownClock ref={ ref }/>
         </Story> 
     );
 }
 
-export default CountdownClockStory;
+export default { 
+    componentInfo: ComponentInfo, 
+    page: CountdownClockPage
+};

@@ -1,6 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './header.scss';
+import {
+    Link
+  } from "react-router-dom"; 
+
+  import './header.scss';
 
 export const Header = ({ components }) => {
     const headerClass = classNames('header');
@@ -8,7 +12,7 @@ export const Header = ({ components }) => {
 
     return (
         <div className={ headerClass }>
-            <span className={ labelClass }> My Storybook </span>
+            <Link to="/"><span className={ labelClass }> My Storybook </span></Link>
         </div>
     )
 }

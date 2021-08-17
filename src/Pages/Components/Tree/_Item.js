@@ -1,11 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 
-const Item = ({ title }) => {
+const Item = ({ children }) => {
     const itemClass = classNames('item');
     return (
         <div className={ itemClass }> 
-            { title } 
+            { children } 
         </div>
     )
 }

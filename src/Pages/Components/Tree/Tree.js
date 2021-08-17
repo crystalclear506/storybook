@@ -1,23 +1,28 @@
 import React from 'react';
 import Item from './_Item';
 import classNames from 'classnames';
+import {
+    Link
+} from "react-router-dom"; 
 
 import './tree.scss';
 
-const Tree = ({ components }) => {
+const Tree = ({ stories }) => {
     const treeContainerClass = classNames('tree-container');
     const listContainerClass = classNames('list-container');
 
+    const componentInfos = stories.map(story => story.componentInfo);
 
-    const items = [];
-
-    for (let i = 0; i < 100; i++) {
-        items.push(<Item title={ 'Item' }/>);
-    }
     return (
         <div className={ treeContainerClass }>
             <div className={ listContainerClass }>
-                { items }
+               { 
+                    componentInfos.map((info) => 
+                        <Link key={ info.name} to={info.path}>
+                            <Item> { info.name } </Item>
+                        </Link>
+                    )
+               }
             </div>
         </div>
     )
