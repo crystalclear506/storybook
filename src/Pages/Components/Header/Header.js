@@ -2,9 +2,9 @@ import React from 'react';
 import classNames from 'classnames';
 import {
     Link
-  } from "react-router-dom"; 
+} from "react-router-dom"; 
 
-  import './header.scss';
+import './header.scss';
 
 export const Header = ({ components }) => {
     const headerClass = classNames('header');
