@@ -8,6 +8,7 @@ import {
 import classNames from 'classnames';
 import Tree from './Components/Tree/Tree';
 import Header from './Components/Header/Header';
+import Home from './Components/Welcome/Welcome';
 
 import CountdownClockStory from './Stories/CountdownClock/CountdownClock.story';
 import stories from './AllComponents';
@@ -38,7 +39,7 @@ const elem = () => {
                                         return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <CountdownClockStory.page/>} </Route>)
                                     })
                                 }
-                                <Route path='/'> Select a component to display </Route>
+                                <Route path='/'> <Home/> </Route>
                             </Switch>                            
                         </div>
                     </div>
