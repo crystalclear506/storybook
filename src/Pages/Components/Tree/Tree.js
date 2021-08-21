@@ -1,21 +1,17 @@
 import React from 'react';
 import Item from './_Item';
-import classNames from 'classnames';
 import {
     Link
 } from "react-router-dom"; 
 
-import './tree.scss';
+import styles from './tree.scss';
 
 const Tree = ({ stories }) => {
-    const treeContainerClass = classNames('tree-container');
-    const listContainerClass = classNames('list-container');
-
     const componentInfos = stories.map(story => story.componentInfo);
 
     return (
-        <div className={ treeContainerClass }>
-            <div className={ listContainerClass }>
+        <div className={ styles['tree-container'] }>
+            <div className={ styles['list-container'] }>
                { 
                     componentInfos.map((info) => 
                         <Link key={ info.name} to={info.path}>

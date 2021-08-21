@@ -12,22 +12,18 @@ import Home from './Components/Welcome/Welcome';
 
 import CountdownClockStory from './Stories/CountdownClock/CountdownClock.story';
 import stories from './AllComponents';
-import './app.scss';
+import styles from './app.scss';
 
 const elem = () => {
-    const appContainerClass = classNames('app-container');
-    const rowClass = classNames('row');
-    const footerClass = classNames('footer');
-    const leftColumnClass = classNames('left-column', 'column');
-    const rightColumnClass = classNames('right-column', 'column');
-    const contentClass = classNames('content');
+    const leftColumnClass = classNames(styles['left-column'], styles.column);
+    const rightColumnClass = classNames(styles['right-column'], styles.column);
 
     return (
         <Router>
-            <div className={ appContainerClass }>
+            <div className={styles['app-container']}>
                 <Header/>
-                <div className={ rowClass }>
-                    <div className={ contentClass }>
+                <div className={ styles.row }>
+                    <div className={ styles.content }>
                         <div className={ leftColumnClass }>
                             <Tree stories={ stories }/>
                         </div>
@@ -36,7 +32,7 @@ const elem = () => {
                                 { 
                                     stories.map((story) => {
                                         const Page = story.page;
-                                        return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <CountdownClockStory.page/>} </Route>)
+                                        return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <story.page/>} </Route>)
                                     })
                                 }
                                 <Route path='/'> <Home/> </Route>
@@ -44,7 +40,7 @@ const elem = () => {
                         </div>
                     </div>
                 </div>
-                <div className={ footerClass }></div>
+                <div className={ styles.footer }></div>
             </div>
         </Router>
     );

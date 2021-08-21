@@ -4,15 +4,12 @@ import {
     Link
 } from "react-router-dom"; 
 
-import './header.scss';
+import styles from './header.scss';
 
 export const Header = ({ components }) => {
-    const headerClass = classNames('header');
-    const labelClass = classNames('label');
-
     return (
-        <div className={ headerClass }>
-            <Link to="/"><span className={ labelClass }> My Storybook </span></Link>
+        <div className={ styles.header }>
+            <Link to="/"><span className={ styles.label }> My Storybook </span></Link>
         </div>
     )
 }

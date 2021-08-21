@@ -1,10 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
+import styles from './tree.scss';
 
 const Item = ({ children }) => {
-    const itemClass = classNames('item');
     return (
-        <div className={ itemClass }> 
+        <div className={ styles.item }> 
             { children } 
         </div>
     )

@@ -1,6 +1,5 @@
 @import '../../shared-stylings/base.scss';
 
-
 .subtitle {
     margin: 20px;
     font-family: $primary-font;
@@ -10,5 +9,12 @@
 .paragraph {   
     margin: 20px;
     font-family: $primary-font;
+    font-weight: 200;
+}
+
+.title {
+    margin: 20px;
+    font-family: $primary-font;
+    font-size: 2.0em;
     font-weight: 200;
 }

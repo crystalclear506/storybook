@@ -1,16 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import './dashboard-item.scss';
+import styles from './dashboard-item.scss';
 
 const DashboardItem = (props) => {
-    const dashboardItemContainerClass = classNames('dashboard-item-container');
-    const titleContainerClass = classNames('title-container');
-    const bodyContainerClass = classNames('body-container')
-
     return (
-        <div className={ dashboardItemContainerClass }>
-            <div className={ titleContainerClass }> { props.title }</div>
-            <div className={ bodyContainerClass }>
+        <div className={ styles['dashboard-item-container'] }>
+            <div className={ styles['title-container'] }> { props.title }</div>
+            <div className={ styles['body-container'] }>
                 { props.children }
             </div>
         </div>
