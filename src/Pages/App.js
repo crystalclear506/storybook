@@ -10,7 +10,6 @@ import Tree from './Components/Tree/Tree';
 import Header from './Components/Header/Header';
 import Home from './Components/Welcome/Welcome';
 
-import CountdownClockStory from './Stories/CountdownClock/CountdownClock.story';
 import stories from './AllComponents';
 import styles from './app.scss';
 
