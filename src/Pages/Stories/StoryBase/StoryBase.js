@@ -14,7 +14,11 @@ const Story = ({ title, dashboardItems, children }) => {
             </div>
             <div className={ styles.dashboard }> 
                 { 
-                    dashboardItems ? dashboardItems.map((item) => item) : ''
+                    dashboardItems ? (
+                        dashboardItems.map(
+                            (item, index) => React.cloneElement(item, {key: index}) 
+                        )
+                    ): ''
                 }
             </div>
         </div>
