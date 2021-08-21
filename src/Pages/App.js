@@ -2,9 +2,8 @@ import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
-  } from "react-router-dom"; 
+    Route
+} from "react-router-dom"; 
 import classNames from 'classnames';
 import Tree from './Components/Tree/Tree';
 import Header from './Components/Header/Header';
