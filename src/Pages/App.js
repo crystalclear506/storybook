@@ -32,7 +32,7 @@ const elem = () => {
                                 { 
                                     stories.map((story) => {
                                         const Page = story.page;
-                                        return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <story.page/>} </Route>)
+                                        return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <Page/>} </Route>)
                                     })
                                 }
                                 <Route path='/'> <Home/> </Route>
