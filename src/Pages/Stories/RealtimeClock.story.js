@@ -1,5 +1,5 @@
 import React from 'react';
-import Story, { DashboardItem } from '../StoryBase/StoryBase';
+import Story, { DashboardItem } from './StoryBase/StoryBase';
 import RealtimeClock from '@crystalclear506/realtime-clock';
 
 const ComponentInfo = {

@@ -1,5 +1,5 @@
-import CountdownClockStory from './Stories/CountdownClock/CountdownClock.story';
-import RealtimeClock from './Stories/CountdownClock/RealtimeClock.story';
+import CountdownClockStory from './Stories/CountdownClock.story';
+import RealtimeClock from './Stories/RealtimeClock.story';
 
 const componentStories = [
     CountdownClockStory,

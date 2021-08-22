@@ -1,5 +1,5 @@
 import React from 'react';
-import Story, { DashboardItem } from '../StoryBase/StoryBase';
+import Story, { DashboardItem } from './StoryBase/StoryBase';
 import CountdownClock from '@crystalclear506/countdown-clock';
 
 const ComponentInfo = {
@@ -33,6 +33,14 @@ const CountdownClockPage = (props) => {
         setCountdownEnd(1000 * 60 * 60);
     }
 
+    const setSevenDays = () => {
+        setCountdownEnd(1000 * 60 * 60 * 24 * 7);
+    }
+
+    const setOneYear = () => {
+        setCountdownEnd(1000 * 60 * 60 * 24 * 365);
+    }
+
     const dashboardItems = [
         <DashboardItem title={ 'Set timer' }>
             <input ref={ refInput } placeholder="Set seconds"></input>
@@ -43,6 +51,12 @@ const CountdownClockPage = (props) => {
         </DashboardItem>,
         <DashboardItem title={ 'Set 1 hour' }>
             <button onClick={ setOneHour }> Set 1 hour </button>
+        </DashboardItem>,
+        <DashboardItem title={ 'Set 7 days' }>
+            <button onClick={ setSevenDays }> Set 7 days </button>
+        </DashboardItem>,
+        <DashboardItem title={ 'Set 365 days' }>
+            <button onClick={ setOneYear }> Set 365 days </button>
         </DashboardItem>
     ];
 
