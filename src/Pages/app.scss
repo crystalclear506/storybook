@@ -6,7 +6,7 @@
 
 .row {
     display: flex;
-    height: calc(100% - 70px);
+    height: calc(100% - 50px);
     justify-content: center;
 }
 
@@ -33,7 +33,7 @@ body {
     }
 
     .left-column {
-        max-width: 297px;
+        max-width: 200px;
 
         margin: {
             left: 15px;
