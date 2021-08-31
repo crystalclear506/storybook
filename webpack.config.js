@@ -6,8 +6,7 @@ module.exports = {
         "./src/index.js",
     ],
     "devServer": {
-        port: 8001,
-        historyApiFallback: true,
+        port: 8001
     },
     "module": {
         "rules": [
