@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@crystalclear506/countdown-clock": "^1.0.1",
+    "@crystalclear506/preview-widget": "^1.0.2",
     "@crystalclear506/realtime-clock": "^1.0.1",
     "classnames": "^2.3.1",
     "html-webpack-plugin": "^5.3.2",
