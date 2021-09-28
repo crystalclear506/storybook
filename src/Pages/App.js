@@ -33,7 +33,7 @@ const elem = () => {
                                         return (<Route key={story.componentInfo.path} path={'/' + story.componentInfo.path}> { <Page/>} </Route>)
                                     })
                                 }
-                                <Route path='#'> <Home/> </Route>
+                                <Route path='/'> <Home/> </Route>
                             </Switch>                            
                         </div>
                     </div>
